@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color: rgb(34, 34, 34);
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    background-color: rgb(24, 24, 24);
+}
+
+.text-highlight{
+    color: #7531eb;
+    font-weight: 700;   
+}
+
+#menu{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-box{
+    padding: 1rem;
+    margin-bottom: 5rem;
+    
+}
+
+.menu-box:hover{
+    border-bottom: 3px solid #7531eb;
+    transition: 0.2s;
+}
+
+.menu-box p{
+    font-size: 3rem;
+}
+
+.table-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+table{
+    color: white;
+    max-width: 60%;
+    border: 1px solid white;
+    border-collapse: collapse;
+    
+}
+
+th, td{
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+    padding: 1.5rem;
+}    
+
+th{
+    background-color: rgb(24, 24, 24);
+}
+
+.todo-icon{
+    font-size: 5rem;
+}
+
+.title-container{
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        font-size: 1rem;
+    }
+
+    .menu-box p{
+        font-size: 2rem;
+    }
+
+    .menu-box{
+        margin-bottom: 3rem;
+        
+    }
+}
